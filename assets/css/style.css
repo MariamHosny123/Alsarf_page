@@ -1,0 +1,62 @@
+.container{
+    display: grid;
+}
+
+.logo_row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: #0C2340;
+    color: aliceblue;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.search_bar{
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.face_tele_logo{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.egy_btn{
+    width: 80px;
+    height:50px;
+    background-color: #00356B;
+    color: white;
+    border-radius: 20px;
+}
+
+.green_btn{
+    width: 80px;
+    height:50px;
+    background-color:#a2ef44;
+    
+}
+
+.description_row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    color: aliceblue;
+    background-color: #00356B;
+}
+
+.description_text{
+    color: white;
+}
+
+.red_text{
+    color:red;
+}
+
+.green_text{
+    color:green;
+}
