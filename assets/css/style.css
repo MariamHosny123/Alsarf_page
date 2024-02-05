@@ -2,61 +2,275 @@
     display: grid;
 }
 
+button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
 .logo_row{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
     background-color: #0C2340;
     color: aliceblue;
+    justify-content: space-around;
 }
 
 .logo{
     display: flex;
     flex-direction: row-reverse;
 }
-.search_bar{
+
+.head_logo_text{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    
+}
+
+
+.search_bar_row{
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
+    height:30px;
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.search_bar{
+    flex:10%;
+    border-radius:5px ;
+    text-align: right;
+}
+
+.search_link{
+    background-color: white;
+    flex: 10%;
+    /* width: 15px;
+    height: 30px; */
+
+
+
+}
+.next_link,.prev_link{
+    
+    text-decoration: none;
+
+}
+
+.link_home{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .face_tele_logo{
     display: flex;
     flex-direction: row-reverse;
+    font-size: 30px;
+    margin-top: auto;
 }
 
 .egy_btn{
-    width: 80px;
+    width: 60px;
     height:50px;
     background-color: #00356B;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
+    border-color: #00356B;
+    margin: 10px;
 }
 
 .green_btn{
     width: 80px;
-    height:50px;
-    background-color:#a2ef44;
+    height:30px;
+    background-color: #36b90a;
+    border-radius: 5px;
+    border-color: #36b90a;
+    color:whitesmoke;
+
     
 }
 
+.grey_btn{
+    width: 80px;
+    height:30px;
+    background-color:grey;
+    border-radius: 5px;
+    border-color: grey;
+    color: white;
+
+}
 .description_row{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
     color: aliceblue;
+    justify-content:center;
     background-color: #00356B;
 }
 
 .description_text{
     color: white;
+    padding: 10px;
+    flex: 10%;
+    
 }
 
 .red_text{
     color:red;
+    font-size: smaller;
 }
 
 .green_text{
     color:green;
+    font-size: smaller;
 }
+
+.grey_text{
+    color: rgb(86, 87, 87);
+    font-size: smaller;
+}
+
+.currency_title{
+    font-size: smaller;
+}
+
+
+.currency_number{
+    font-size: 25px;
+}
+
+.first_content_row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+   
+}
+.currency_price{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title_currency_price{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    color: rgb(36, 36, 182);
+    font-size: 20px;
+    
+}
+
+.list_btn{
+    height:30px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.date_time{
+    display: flex;
+    flex-direction:column;
+    color: green;
+}
+
+.flag_row{
+    color:black;
+    display: flex;
+    flex-direction:row-reverse;
+
+}
+
+.currency_table{
+    direction: rtl;
+    border-collapse: separate;
+    border-spacing: 40px  0;
+
+}
+
+.change_currency{
+    background-color:whitesmoke;
+    border-radius: 5px;
+    
+
+}
+
+.change_currency_table{
+    direction: rtl;
+}
+.gold_price_table{
+    direction: rtl;
+    border-collapse: separate;
+    border-spacing: 40px  0;
+}
+
+.gasoline_table{
+    direction: rtl;
+    border-collapse: separate;
+    border-spacing: 40px  0;
+
+}
+.foreign_currency_table{
+    direction: rtl;
+    border-collapse: separate;
+    border-spacing: 40px  0;
+
+}
+
+.image_flag{
+    width: 35px;
+    height: 20px;
+}
+
+.currency_table_header{
+    color: green;
+}
+
+
+
+.see_all_prices{
+
+    text-align: center;
+    color: rgb(86, 87, 87);
+    font-size: large;
+    text-decoration: none;
+
+    
+}
+
+.gold_table_header{
+    color: rgb(202, 172, 0);
+}
+
+
+
+
+
+
+
+
+  
+ 
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+      font-size: 80px;
+
+    }
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+      font-size: 30px;
+
+    }
+  }
+
+

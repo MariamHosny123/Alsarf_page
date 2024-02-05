@@ -13,22 +13,28 @@
         <div class="header">
             <div class="logo_row">
                 <div class="logo">
-                    <i class="fa-brands fa-viacoin"></i>
-                    <p>الصرف اليوم</p>
+                    <div class="head_logo_text">
+                        <i class="fa-brands fa-viacoin"></i>
+                        <span>الصرف اليوم</span>
+                    </div>
                     <button class="egy_btn">مصر</button>
                 </div>
                 
                 
-                <div class="search_bar">
-                    <button class="green_btn">Home<i class="fa-solid fa-house-chimney"></i></button>
-                    <input type="text" value="/https://sarf-today.com">
+                <div class="search_bar_row">
+                    <div class="link_home">
+                        <button class="green_btn">Home
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </button>
+                            <!-- <div class="search_link">
+                                <a  class="next_link" href="#">&laquo;</a>
+                                <a class="prev_link" href="#">&raquo;</a>
+                            </div> -->
+                    </div>
+                    <input type="text" value="/https://sarf-today.com" class="search_bar">
                     <button class="green_btn">Redirect<i class="fa-solid fa-star"></i></button>
                     <button class="grey_btn">Permalink</button>
-                    <div>
-                        <a href="#">&laquo;</a>
-                        <a href="#">&raquo;</a>
-
-                    </div>
+                  
                 </div>
 
                 <div class="face_tele_logo">
@@ -42,52 +48,399 @@
 
             <div class="description_row">
                 <div class="description_text">
-                    <p>دولار السوق</p>
-                    <p>61.70</p>
-                    <p>(1.7-) <span class="red_text">2.68%</span></p>
+                    <span class="currency_title">دولار السوق</span>
+                    <br>
+                    <span class="currency_number">61.70</span>
+                    <br>
+                    (1.7-) <span class="red_text">2.68%</span>
                 </div>
 
                 <div class="description_text">
-                    <p>دولار البنك</p>
-                    <p>30.90</p>
-                    <p>(0) <span class="green_text">0.00%</span></p>
+                    <span class="currency_title">دولار البنك</span>
+                    <br>
+                    <span class="currency_number">30.90</span>
+                    <br>
+                    (0) <span class="green_text">0.00%</span>
                 </div>
                 <div class="description_text">
-                    <p>يورو السوق</p>
-                    <p>66.56</p>
-                    <p>(1.83-) <span class="red_text">2.68%</span></p>
+                    <span class="currency_title">يورو السوق</span>
+                    <br>
+                    <span class="currency_number">66.56</span>
+                    <br>
+                    (1.83-) <span class="red_text">2.68%</span>
                 </div>
                 <div class="description_text">
-                    <p>يورو البنك</p>
-                    <p>33.33</p>
-                    <p>(0) <span class="green_text">0.00%</span></p>
+                    <span class="currency_title">يورو البنك</span>
+                    <br>
+                    <span class="currency_number">33.33</span>
+                    <br>
+                    (0) <span class="green_text">0.00%</span>
                 </div>
                 <div class="description_text">
-                    <p>غرام الذهب</p>
-                    <p>3,815.02</p>
-                    <p>(0)<span class="red_text">0.00%</span></p>
+                    <span class="currency_title">غرام الذهب</span>
+                    <br>
+                    <span class="currency_number">3,815.02</span>
+                    <br>(0)<span class="red_text">0.00%</span>
                 </div>
                 <div class="description_text">
-                    <p>اونصة الذهب</p>
-                    <p>$2039.68</p>
-                    <p>($3) <span class="green_text">0.15%</span></p>
+                    <span class="currency_title">اونصة الذهب</span>
+                    <br>
+                    <span class="currency_number">$2039.68</span>
+                    <br>($3) <span class="green_text">0.15%</span>
                 </div>
                 <div class="description_text">
-                    <p>بنزين</p>
-                    <p>11.50</p>
-                    <p>(10.75-) <span class="red_text">(100.00)</span></p>
+                    <span class="currency_title">بنزين</span>
+                    <br>
+                    <span class="currency_number">11.50</span>
+                    <br>(10.75-) <span class="red_text">(100.00)</span>
                 </div>
                 <div class="description_text">
-                    <p>سولار</p>
-                    <p>8.25</p>
-                    <p>(7.25-) <span class="red_text">(100.00)</span></p>
+                    <span class="currency_title">سولار</span>
+                    <br>
+                    <span class="currency_number">8.25</span>
+                    <br>(7.25-) <span class="red_text">(100.00)</span>
                 </div>
                 <div class="description_text">
-                    <p>بيتكوين</p>
-                    <p>$42,500</p>
-                    <p>($) <span class="red_text">%</span></p>
+                    <span class="currency_title">بيتكوين</span>
+                    <br>
+                    <span class="currency_number">$42,500</span>
+                    <br>($) <span class="red_text">%</span>
                 </div>
             </div>
+         </div>
+
+
+        <div class="row2"> 
+            <div class="col1 first_content_row">
+                <div class="currency_price">
+                    <div class="title_currency_price">
+                        <span><a href="#">&laquo;</a>  أسعار الصرف </span>
+                        
+                        <button class="list_btn"><i class='fas fa-angle-down'></i>  السوق الموازي</button>
+                    </div>
+                    
+                        
+                    <div class="table">
+                        <hr>
+                        <table class="currency_table">
+                            <tr class="currency_table_header">
+                                <th>
+                                    2024/2/4  11:22
+                                </th>
+                                <th>شراء</th>
+                                <th>مبيع</th>
+                                <th>الفرق</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="image_flag" src="assets/images/united-states.png" alt="US Flag">
+                                    <span>دولار أمريكي</span>
+                                    <span class="grey_text">:(USD)</span>
+                                </td>
+                                <td>60.70</td>
+                                <td>61.70</td>
+                                <td class="red_text" >
+                                    2.68%
+                                    <i class='fas fa-angle-down' style='color:red'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="image_flag" src="assets/images/european-union.png" alt="EURO Flag">
+                                    <span>يورو</span>
+                                    <span class="grey_text">:(EUR)</span>
+                                </td>
+                                <td>65.48</td>
+                                <td>66.56</td>
+                                <td class="red_text">
+                                    2.68%
+                                    <i class='fas fa-angle-down' style='color:red'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="image_flag" src="assets/images/turkey.png" alt="Turkey Flag">
+                                    <span>ليرة تركي</span>
+                                    <span class="grey_text">:(TRY)</span>
+                                </td>
+                                <td>2</td>
+                                <td>2.03</td>
+                                <td class="red_text">
+                                    2.40%
+                                    <i class='fas fa-angle-down' style='color:red'></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img class="image_flag" src="assets/images/saudi-arabia.png" alt="Saudi Arbia Flag">
+                                    <span>ريال سعودي</span>
+                                    <span class="grey_text">:(SAR)</span>
+                                </td>
+                                <td>16.21</td>
+                                <td>16.48</td>
+                                <td class="red_text">
+                                    2.66%
+                                    <i class='fas fa-angle-down' style='color:red'></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img class="image_flag" src="assets/images/jordon flag.png" alt="Jordon Flag">
+                                    <span>دينار أردني</span>
+                                    <span class="grey_text">:(JOD)</span>
+                                </td>
+                                <td>85.68</td>
+                                <td>87.09</td>
+                                <td class="red_text">
+                                    2.68%
+                                    <i class='fas fa-angle-down' style='color:red'></i>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img class="image_flag" src="assets/images/united-arab-emirates.png" alt="UAE Flag">
+                                    <span>درهم اماراتي</span>
+                                    <span class="grey_text">:(AED)</span>
+                                </td>
+                                <td>16.53</td>
+                                <td>16.8</td>
+                                <td class="red_text">
+                                    2.72%
+                                    <i class='fas fa-angle-down' style='color:red'></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img class="image_flag" src="assets/images/united-kingdom (1).png" alt="GB Flag">
+                                    <span>جنيه استرليني</span>
+                                    <span class="grey_text" >:(GBP)</span>
+                                </td>
+                                <td>76.68</td>
+                                <td>77.95</td>
+                                <td class="green_text">
+                                    2.68%
+                                    <i class='fas fa-angle-up' style='color:green'></i>
+                                </td>
+                            </tr>
+
+                            <tr >
+                                <td colspan="3"  class="see_all_prices">
+                                    مشاهدة جميع العملات
+                                    <a href="#" class="see_all_prices">&raquo;</a>
+                                    </td>
+                            </tr>
+
+                    
+                        </table>
+                    </div>
+                    
+                </div>
+            <div class="col2">
+                <div class="change_currency" >
+                    <table class="change_currency_table">
+                        <tr>
+                            <th>محول العملات </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="buy">
+                                <label for="buy">شراء</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="sell">
+                                <label for="sell">مبيع</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="المبلغ هنا ...">
+                                <button class="list_btn"><i class='fas fa-angle-down'></i>  دولار أمريكي</button>
+
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="المبلغ هنا ...">
+                                <button class="list_btn"><i class='fas fa-angle-down'></i>  جنيه مصري</button>
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="gold_price">
+                    <table class="gold_price_table">
+                        <tr class="gold_table_header">
+                            <th><a href="#">&laquo;</a>أسعارالذهب</th>
+                            <th> السعر</th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/gold-bars.png" alt="gold-bars">
+                                <span>غرام ذهب عيار 18 </span>
+
+                            </td>
+                            <td>
+                                <i class='fas fa-angle-up' style='color:green'></i>
+                                <span>3,242.76 جنيه</span>
+                            </td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/gold-bars.png" alt="gold-bars">
+                                <span>غرام ذهب عيار 18 </span>
+
+                            </td>
+                            <td>
+                                <i class='fas fa-angle-up' style='color:green'></i>
+                                <span>3,242.76 جنيه</span>
+                            </td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/gold-bars.png" alt="gold-bars">
+                                <span>غرام ذهب عيار 18 </span>
+
+                            </td>
+                            <td>
+                                <i class='fas fa-angle-up' style='color:green'></i>
+                                <span>3,242.76 جنيه</span>
+                            </td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/gold-bars.png" alt="gold-bars">
+                                <span>غرام ذهب عيار 18 </span>
+
+                            </td>
+                            <td>
+                                <i class='fas fa-angle-up' style='color:green'></i>
+                                <span>3,242.76 جنيه</span>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+
+            <div class="col3">
+                <div class="gasoline">
+                    <table class="gasoline_table">
+                        <tr>
+                            <th>
+                                <a href="#">&laquo;</a>المحروقات
+                            </th>
+                            <th>
+                                السعر
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/gas-station.png" alt="gas-station">
+                                <span>أوكتان 80</span>
+                            </td>
+
+                            <td>
+                                <i class='fas fa-angle-up' style='color:red'></i>
+                                <span>8.75 جنيه</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/gas-station.png" alt="gas-station">
+                                <span>أوكتان 80</span>
+                            </td>
+
+                            <td>
+                                <i class='fas fa-angle-up' style='color:red'></i>
+                                <span>8.75 جنيه</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/gas-station.png" alt="gas-station">
+                                <span>أوكتان 80</span>
+                            </td>
+
+                            <td>
+                                <i class='fas fa-angle-up' style='color:red'></i>
+                                <span>8.75 جنيه</span>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+                <div class="foreign_currency">
+                    <table class="foreign_currency_table">
+                        <tr class="foreign_currency_header">
+                            <th>
+                                العملات
+                                <br>
+                                الأجنبية: 
+                            </th>
+                            <th>
+                                الصرف
+                            </th>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/european-union.png" alt="EURO">
+                                <span>يورو:</span>
+                            </td>
+                            <td>
+                                <i class='fas fa-angle-up' style='color:red'></i>
+                                <span>1.079 دولار</span>
+
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/turkey.png" alt="Turkey">
+                                <span>دولار:</span>
+                            </td>
+                            <td>
+                                <i class='fas fa-angle-up' style='color:green'></i>
+                                <span>30.501 ل.ت </span>
+
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <img class="image_flag" src="assets/images/united-kingdom (1).png" alt="UK">
+                                <span>استرليني:</span>
+                            </td>
+                            <td>
+                                <i class='fas fa-angle-up' style='color:red'></i>
+                                <span>1.263 دولار</span>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
         </div>
 
 
