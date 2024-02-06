@@ -19,7 +19,7 @@ a{
 .logo_row{
     display: flex;
     flex-direction: row-reverse;
-    background-color: #0C2340;
+    background-color: #152638;
     color: aliceblue;
     justify-content: space-around;
 }
@@ -29,7 +29,14 @@ a{
     padding: 10px;
 }
 
+.logo_image{
+    width:150px;
+    height: 50px;
+}
+
 .head_logo_text{
+    display: flex;
+    flex-direction: row;
     direction: rtl;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
@@ -39,10 +46,10 @@ a{
 .egy_btn{
     width: 60px;
     height:50px;
-    background-color: #00356B;
+    background-color:#38495b;
     color: white;
     border-radius: 10px;
-    border-color: #00356B;
+    border-color: 38495b;
     margin: 10px;
 }
 .description_row{
@@ -50,7 +57,7 @@ a{
     flex-direction: row-reverse;
     color: aliceblue;
     justify-content: center;
-    background-color: #00356B;
+    background-color: #38495b;
     margin-bottom: 20px;
 }
 
@@ -58,7 +65,7 @@ a{
     color: white;
     padding: 10px;
     margin-left: 55px;
-    margin-right: 10px;  
+    margin-right: 5px;  
 }
 
 
