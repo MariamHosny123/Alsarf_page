@@ -36,44 +36,6 @@ a{
 }
 
 
-.search_bar_row{
-    background-color: white;
-    display: flex;
-    flex-direction: row-reverse;
-    height:30px;
-    align-items: center;
-    justify-content: space-between;
-    /* flex: 20%; */
-
-}
-
-
-
-.search_bar{
-    border-radius:5px ;
-    text-align: right;
-    width: 300px;
-}
-
-.search_link{
-    background-color: white;
-    flex: 10%;
-    /* width: 15px;
-    height: 30px; */
-
-}
-.next_link,.prev_link{
-    
-    text-decoration: none;
-
-}
-
-.link_home{
-    display: flex;
-    flex-direction: column;
-    
-}
-
 .face_tele_logo{
     direction: rtl;
     font-size: 30px;
