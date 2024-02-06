@@ -13,6 +13,7 @@ a{
 .header{
     display: flex;
     flex-direction: column;
+    
 }
 
 .logo_row{
@@ -20,7 +21,7 @@ a{
     flex-direction: row-reverse;
     background-color: #0C2340;
     color: aliceblue;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .logo{
@@ -35,16 +36,6 @@ a{
     /* flex: 30%; */
 }
 
-
-.face_tele_logo{
-    direction: rtl;
-    font-size: 30px;
-
-    /* flex: 40%; */
-
-    
-}
-
 .egy_btn{
     width: 60px;
     height:50px;
@@ -54,7 +45,38 @@ a{
     border-color: #00356B;
     margin: 10px;
 }
+.description_row{
+    display: flex;
+    flex-direction: row-reverse;
+    color: aliceblue;
+    justify-content: center;
+    background-color: #00356B;
+    margin-bottom: 20px;
+}
 
+.description_text{
+    color: white;
+    padding: 10px;
+    margin-left: 55px;
+    margin-right: 10px;  
+}
+
+
+
+.face_tele_logo{
+    direction: rtl;
+    font-size: 30px;
+    margin-top: auto;
+
+    /* flex: 40%; */
+
+    
+}
+
+
+
+
+/* 
 .green_btn{
     width: 80px;
     height:30px;
@@ -74,28 +96,9 @@ a{
     border-color: grey;
     color: white;
 
-}
+} */
 
 
-
-.description_row{
-    display: flex;
-    flex-direction: row-reverse;
-    color: aliceblue;
-    justify-content: center;
-    background-color: #00356B;
-    margin-bottom: 20px;
-}
-
-.description_text{
-    color: white;
-    padding: 10px;
-    margin-left: 55px;
-    margin-right: 10px;
-    
-    
-    
-}
 
 .red_text{
     color:red;
@@ -111,6 +114,8 @@ a{
     color: rgb(86, 87, 87);
     font-size: smaller;
 }
+
+
 
 .currency_title{
     font-size: smaller;
