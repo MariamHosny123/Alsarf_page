@@ -186,14 +186,6 @@ td{
     opacity: 0.7;
 }
 
-/* .first_content_row{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-   
-} */
-
-
 
 .title_currency_price{
     
@@ -225,6 +217,11 @@ tr{
 .change_currency_table_data{
     display: flex; 
     justify-content: space-around;
+}
+.input_btn{
+    width: 200px;
+    font-family: MyFont;
+    font-size: 14px;
 }
 
 .list_btn{
