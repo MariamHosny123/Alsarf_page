@@ -6,7 +6,7 @@
   .gasoline_table,.foreign_currency_table,.currency_table,.gold_price_table,.row3{
     font-family: MyFont;
   }
-
+  
 button{
     cursor: pointer;
 }
@@ -141,7 +141,7 @@ button{
 }
 
 .green_text{
-    color:rgba(25, 156, 25,0.7);
+    color:#50a973;
     font-size: smaller;
 }
 
@@ -202,7 +202,7 @@ td{
 }
 
 .currency_table_header{
-    color: rgb(5, 122, 5);
+    color: #50a973;
     font-size: 15px;
     font-weight: bold;
     text-align:right;
