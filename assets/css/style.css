@@ -1,18 +1,40 @@
-/* .container{
-    display: grid;
-} */
+@font-face {
+    font-family: MyFont;
+    src: url(alfont_com_هلفيتيكا-عربي-.ttf);
+  }
+
+  .gasoline_table,.foreign_currency_table,.currency_table,.gold_price_table,.row3{
+    font-family: MyFont;
+  }
 
 button{
     cursor: pointer;
 }
 
-a{
+.currency_link{
     text-decoration: none;
+    color:#6179a5;
+}
+.gold-bar_link{
+    text-decoration: none;
+    color: rgb(202, 172, 0);
+    padding: 10px;
+}
+
+.gasoline_link{
+    text-decoration: none;
+    color:#6179a5;
+    font-weight: bold;
+    padding: 10px;
 }
 
 .header{
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+   
     
 }
 
@@ -25,60 +47,65 @@ a{
 }
 
 .logo{
-   direction: rtl;
     padding: 10px;
 }
 
 .logo_image{
     width:150px;
-    height: 50px;
 }
 
-.head_logo_text{
+.head_logo_text{   
     display: flex;
     flex-direction: row;
     direction: rtl;
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
     /* flex: 30%; */
 }
 
 .egy_btn{
-    width: 60px;
-    height:50px;
+    width: 40px;
+
     background-color:#38495b;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     border-color: 38495b;
     margin: 10px;
-}
-.description_row{
-    display: flex;
-    flex-direction: row-reverse;
-    color: aliceblue;
-    justify-content: center;
-    background-color: #38495b;
-    margin-bottom: 20px;
-}
-
-.description_text{
-    color: white;
+    text-align: center;
     padding: 10px;
-    margin-left: 55px;
-    margin-right: 5px;  
+    cursor: pointer;
+
 }
-
-
 
 .face_tele_logo{
     direction: rtl;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
 
     /* flex: 40%; */
 
     
 }
+
+.description_row{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    background-color: #38495b;
+    margin-bottom: 40px;
+    overflow:auto;
+}
+
+.description_text{
+    color: white;
+    padding: 10px;
+    margin-left: 35px; 
+    direction: rtl; 
+}
+
+
+
 
 
 
@@ -108,29 +135,55 @@ a{
 
 
 .red_text{
-    color:red;
+    color:rgba(252, 62, 62,0.7);
     font-size: smaller;
+    
 }
 
 .green_text{
-    color:green;
+    color:rgba(25, 156, 25,0.7);
     font-size: smaller;
 }
 
 .grey_text{
-    color: rgb(86, 87, 87);
-    font-size: smaller;
+    color: rgba(86, 87, 87,0.7);
+    font-size: 15px;
 }
 
 
+
+.currency_table{
+    direction: rtl;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+tr:hover{
+
+    background-color: #fafaface;
+}
 
 .currency_title{
+    font-size: 15px;
+}
+
+td{
+    padding: 10px;
+}
+.currency_number{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.grey_light_text{
+    color: lightgray;
     font-size: smaller;
+    
 }
 
 
-.currency_number{
-    font-size: 25px;
+.light_text{
+    font-weight: lighter;
+    opacity: 0.7;
 }
 
 /* .first_content_row{
@@ -145,9 +198,22 @@ a{
 .title_currency_price{
     
     justify-content: space-between;
-    color: rgb(36, 36, 182);
-    font-size: 20px;
+   color:#6179a5;
+    font-size: 25px;
 
+    
+}
+.bold_text{
+    font-weight: bold;
+
+
+}
+
+.currency_table_header{
+    color: rgb(5, 122, 5);
+    font-size: 15px;
+    font-weight: bold;
+    text-align:right;
     
 }
 
@@ -156,11 +222,24 @@ tr{
 
 }
 
+.change_currency_table_data{
+    display: flex; 
+    justify-content: space-around;
+}
+
 .list_btn{
+    width: 120px;
     height:30px;
     background-color: white;
     border-radius: 5px;
+    border: 1px  solid gray;
+    text-align: center;
+    padding: 3px;
+    color: #747272;
 
+}
+.list_btn_arrow{
+    padding: 3px;
 }
 
 .date_time{
@@ -176,50 +255,37 @@ tr{
 
 }
 
-.currency_table{
-    direction: rtl;
-    border-collapse: collapse;
-    border-spacing: 40px  0;
 
-
-}
 
 .change_currency{
-    background-color:whitesmoke;
     border-radius: 5px;
-    
+    border: 1px  solid gray;
+    border-collapse:separate;
+
 
 }
 
-.change_currency_table{
-    direction: rtl;
-}
-.gold_price_table{
-    direction: rtl;
-    border-collapse: separate;
-    border-spacing: 40px  0;
-}
-
-.gasoline_table{
-    direction: rtl;
-    border-collapse: separate;
-    border-spacing: 40px  0;
+.change_currency_text_header{
+    text-align: right; 
+    padding: 10px ;
 
 }
-.foreign_currency_table{
+
+.sell_buy_row{
+    background-color: whitesmoke;
+
+}
+
+.change_currency_table ,.gold_price_table ,.foreign_currency_table ,.gasoline_table{
     direction: rtl;
-    border-collapse: separate;
-    border-spacing: 40px  0;
+    font-size: 20px;
 
 }
 
 .image_flag{
-    width: 35px;
-    height: 20px;
-}
-
-.currency_table_header{
-    color: green;
+    width: 34px;
+    height: 30px;
+    padding-left: 10px;
 }
 
 
@@ -238,23 +304,43 @@ tr{
     color: rgb(202, 172, 0);
 }
 
-
+.foreign_currency_header{
+    color: rgb(196, 2, 2);
+}
+.gasoline_header{
+    color:#6179a5;
+}
 .row2{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 20px;
 
     
     }
 
+.change_currency_gold_price{
+    display: flex;
+    flex-direction: column;
+
+}
 .col1{
-    flex: 20%;
+    padding: 10px;
+    margin-left: 35px;  
+    /* flex: 20%; */
 }
 .col2{
-    flex: 20%;
+    padding: 10px;
+    margin-left: 35px;  
+    /* flex: 20%; */
+    
+       
 }
 
 .col3{
-    flex: 15%;
+    padding: 10px;
+    margin-left: 35px;  
+    /* flex: 15%; */
 }
 
 
@@ -325,12 +411,13 @@ tr{
 
 
 .footer {
-    width: 100%;
-    height: 18%;
-    background-color: rgb(247, 239, 239);
+    background-color:#f7f7f7;
     direction: rtl;
     border-top-width: 2px;
     border-top-style: solid;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
     
  }
  .footer_table{
@@ -381,12 +468,43 @@ tr{
   }
   
  
-  @media screen and (max-width: 600px) {
-    .row {
-      flex-direction: column;
-      font-size: 30px;
-
+  @media screen and (max-width: 700px) {
+    .description_row{
+        justify-content: space-evenly;
+        background-color: #38495b;
+        margin-bottom: 40px;
     }
+    
+    .row2{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
+    .col1{
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px; 
+        /* flex: 20%; */
+    }
+    .col2{
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px; 
+        /* flex: 20%; */
+        
+        
+    }
+
+    .col3{
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px; 
+        /* flex: 15%; */
+    }
+
   }
 
 
