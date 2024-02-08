@@ -185,6 +185,7 @@ td{
 }
 .bold_text{
     font-weight: bold;
+    color: #2b2a2a;
 
 
 }
@@ -288,8 +289,8 @@ tr{
 
 .image_flag{
     width: 34px;
-    height: 30px;
-    padding-left: 5px;
+    height: 18px;
+    padding-left:5px;
 }
 .image_gasoline{
     width: 25px;
@@ -589,3 +590,4 @@ tr{
 
   }
 
+  
