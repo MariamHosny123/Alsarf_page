@@ -227,6 +227,9 @@ tr{
     font-size: large ;
 
 }
+.list_btn_text{
+    margin-left:15px ;
+}
 
 .list_btn_2{
     width: 120px;
@@ -239,9 +242,7 @@ tr{
     font-size: large ;
 
 }
-.list_btn_arrow{
-    padding-right: 20px;
-}
+
 
 .date_time{
     display: flex;
@@ -329,7 +330,7 @@ tr{
     grid-template-columns: auto auto auto;
     justify-content: center;
     direction: rtl;
-    margin-top: 20px;
+    margin-top: 40px;
 
 
     
@@ -364,24 +365,25 @@ tr{
 
 
 .row3{
-    /* display: flex;
+    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly; */
+    justify-content: space-evenly;
     
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    
+     */
 }
 
 .news_section{
-   
+    margin-left: auto;
+    margin-right: 280px;
 }
 
 .news_section2{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .news_header{
@@ -420,7 +422,7 @@ tr{
 }
 .image_news{
     width: 550px;
-    height: 400px;
+    height: 450px;
     border-radius: 8px;
 
 }
