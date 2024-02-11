@@ -43,8 +43,6 @@ button{
     background-color: #152638;
     color: aliceblue;
     justify-content: space-around; */
-
-    
     display: grid;
     grid-template-columns: auto auto auto;
     direction: rtl;
@@ -71,7 +69,6 @@ button{
 
 .egy_btn{
     width: 40px;
-
     background-color:#38495b;
     color: white;
     border-radius: 8px;
@@ -90,10 +87,7 @@ button{
     margin-bottom: auto;
     cursor: pointer;
     margin-left: 200px;
-
     /* flex: 40%; */
-
-    
 }
 
 .description_row{
@@ -133,7 +127,6 @@ button{
     font-size: 15px;
 }
 
-
 .grey_text2{
     color: rgba(86, 87, 87,0.7);
     font-size: 20px;
@@ -146,7 +139,6 @@ button{
     
 }
 tr:hover{
-
     background-color: #fafaface;
 }
 
@@ -168,26 +160,20 @@ td{
     
 }
 
-
 .light_text{
     font-weight: lighter;
     opacity: 0.7;
 }
 
-
-.title_currency_price{
-    
+.title_currency_price{    
     justify-content: space-between;
    color:#6179a5;
     font-size: 25px;
-
-    
 }
+
 .bold_text{
     font-weight: bold;
     color: #2b2a2a;
-
-
 }
 
 .currency_table_header{
@@ -207,6 +193,7 @@ tr{
     display: flex; 
     justify-content: space-around;
 }
+
 .input_btn{
     margin: auto;
     width: 200px;
@@ -227,6 +214,7 @@ tr{
     font-size: large ;
 
 }
+
 .list_btn_text{
     margin-left:15px ;
 }
@@ -243,13 +231,6 @@ tr{
 
 }
 
-
-.date_time{
-    display: flex;
-    flex-direction:column;
-    color: green;
-}
-
 .flag_row{
     color:black;
     display: flex;
@@ -257,14 +238,10 @@ tr{
 
 }
 
-
-
 .change_currency{
     border-radius: 5px;
     border: 1px  solid gray;
     border-collapse:separate;
-
-
 }
 
 .change_currency_text_header{
@@ -299,16 +276,11 @@ tr{
     padding-left: 5px;
 }
 
-
-
 .see_all_prices{
-
     text-align: center;
     color: rgb(86, 87, 87);
     font-size: large;
     text-decoration: none;
-
-    
 }
 
 .gold_table_header{
@@ -318,9 +290,11 @@ tr{
 .foreign_currency_header{
     color: rgb(196, 2, 2);
 }
+
 .gasoline_header{
     color:#6179a5;
 }
+
 .row2{
     /* display: flex;
     flex-direction: row-reverse;
@@ -331,27 +305,23 @@ tr{
     justify-content: center;
     direction: rtl;
     margin-top: 40px;
-
-
     
     }
 
 .change_currency_gold_price{
     display: flex;
     flex-direction: column;
-
 }
-.col1{
-    
+
+.col1{    
     margin-left: 35px;  
     /* flex: 20%; */
 }
+
 .col2{
     padding: 10px;
     margin-left: 35px;  
-    /* flex: 20%; */
-    
-       
+    /* flex: 20%; */       
 }
 
 .col3{
@@ -360,17 +330,12 @@ tr{
     /* flex: 15%; */
 }
 
-
-
-
-
 .row3{
     margin-left: auto;
     margin-right: 280px;
     display: grid;
     grid-template-rows: auto auto;
-    justify-content: end;
-    
+    justify-content: end;    
 }
 
 .news_section2{
@@ -388,7 +353,6 @@ tr{
     justify-content: space-between;
     font-size: 30px;
     flex-direction: row-reverse; */
-
     display: grid;
     grid-template-columns: auto  auto;
     gap: 550px;
@@ -405,8 +369,7 @@ tr{
     
 }
 
-
-  .centered_text {
+.centered_text {
     position: absolute;
     bottom: 8px;
     left: 12px;
@@ -419,6 +382,7 @@ tr{
     border-spacing: 40px  0;
     
 }
+
 .image_news{
     width: 500px;
     height: 400px;
@@ -432,24 +396,22 @@ tr{
     border-radius: 8px;
 } 
 
-
 .footer {
     background-color:#f7f7f7;
     border-top-width: 2px;
     border-top-style: solid;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 50px;
-    
+    margin-top: 50px;    
  }
+
  .footer_table{
     display: grid;
     grid-template-columns: auto auto auto auto;
-   justify-content: space-around; 
+    justify-content: space-around; 
     direction: rtl;
     margin-top: 20px;
     
-
  }
 
  .footer_table_header{
@@ -457,7 +419,6 @@ tr{
  }
 
  .black_btn{
-
     display: flex;
     flex-direction: row;
     background-color: black;
@@ -468,8 +429,8 @@ tr{
     border-color: black;
     margin-bottom: 5px;
 
-
 }
+
 .list_text{
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -506,6 +467,7 @@ tr{
     margin-left: 5px;
 
 }
+
 .col2_footer,.col3_footer ,.col4_footer{
     font-family: MyFont;
     margin: 0;
@@ -513,27 +475,22 @@ tr{
 
 
 @media screen and (max-width: 1400px) {
-    .column {
-      flex: 50%;
-      font-size: 80px;
-
-
-    }
-
+  
     .description_row{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
     }
+
     .row2{
         display: grid;
         grid-template-columns: auto auto;
-
-
     }
+
     td{
         padding: 0.5px;
         font-size: smaller;
     }
+
     .title_currency_price{
         font-size: smaller;
     }
@@ -547,37 +504,35 @@ tr{
     .row3{
         justify-content: center;
         margin: 0;
-      }
-        .news_table{
-            font-size: 20px;
-        }
+    }
+
+    .news_table{
+        font-size: 20px;
+    }
+
     .news_header{
         font-size: 25px;
         gap: 0px;
         justify-content: space-around; 
-       }
+    }
 
-       .grey_text2{
+    .grey_text2{
         font-size: 25px;
-       }
+    }
     
     .footer_table{
         display: grid;
         grid-template-columns: auto  auto auto; 
     
-     }
+    }
 
     .reverse_direction{
         direction: rtl;
     }
-
- 
-
   }
  
   @media screen and (max-width: 1000px) {
     
-
     .description_row{
         display: grid;
         direction: rtl;
@@ -588,30 +543,30 @@ tr{
         flex-direction: column;
         justify-content: center;
     }
+
     .row3{
         justify-content: center;
     }
+
     .news_section2{
         grid-template-columns: auto;
     }
+
     .col_news{
         margin-top: 20px;
     }
-
-    
     .col1{
         padding: 10px;
         margin-left: 10px;
         margin-right: 10px; 
         /* flex: 20%; */
     }
+
     .col2{
         padding: 10px;
         margin-left: 10px;
         margin-right: 10px; 
-        /* flex: 20%; */
-        
-        
+        /* flex: 20%; */        
     }
 
     .col3{
@@ -633,31 +588,22 @@ tr{
 
   }
 
-
-
-
   @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      font-size: 80px;
-
-
-    }
-
+   
     .logo_row{
         display: grid;
         grid-template-columns: auto ;
 
     }
+
     .description_row{
         display: grid;
         grid-template-columns: auto auto auto;
     }
+
     .row2{
         display: grid;
         grid-template-columns: auto;
-
-
     }
 
     .footer_table{
@@ -666,14 +612,10 @@ tr{
      }
 
   }
+
+
   @media screen and (max-width: 600px) {
-    .column {
-      flex: 50%;
-      font-size: 80px;
-
-
-    }
-
+   
     .logo_row{
         display: grid;
         grid-template-columns: auto ;
@@ -687,8 +629,6 @@ tr{
     .row2{
         display: grid;
         grid-template-columns: auto;
-
-
     }
 
     .footer_table{
@@ -700,13 +640,7 @@ tr{
 
 
   @media screen and (max-width: 500px) {
-    .column {
-      flex: 50%;
-      font-size: 80px;
-
-
-    }
-
+    
     .logo_row{
         display: grid;
         grid-template-columns: auto ;
@@ -721,8 +655,8 @@ tr{
         display: grid;
         grid-template-columns: auto;
 
-
     }
+
     .row3{
         grid-template-columns: auto;
     }
@@ -734,8 +668,7 @@ tr{
 
     .footer_table{
         grid-template-columns: auto;
-      
-    
+          
      }
 
   }
