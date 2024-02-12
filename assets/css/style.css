@@ -318,6 +318,22 @@ tr{
 
 }
 
+.gold_price_grid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 15px;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.gasoline_grid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 15px;
+    font-size: 22px;
+    margin-top: 15px;
+
+}
 .gold_price{
     margin-top: 20px;
 }
@@ -366,6 +382,7 @@ tr{
     grid-template-columns: auto auto auto;
     margin-top: 40px;
     justify-content: center;
+    margin-bottom: 50px;
     
     }
 
