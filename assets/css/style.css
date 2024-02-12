@@ -321,7 +321,7 @@ tr{
 .gold_price_grid{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    gap: 15px;
+    gap: 25px;
     font-size: 22px;
     margin-top: 15px;
 }
@@ -329,7 +329,7 @@ tr{
 .gasoline_grid{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    gap: 15px;
+    gap: 25px;
     font-size: 22px;
     margin-top: 15px;
 
@@ -371,6 +371,7 @@ tr{
 
 .gasoline_header{
     color:#6179a5;
+    font-weight: 900;
 }
 
 .row2{
