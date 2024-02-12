@@ -181,11 +181,18 @@ td{
 .bold_text{
     font-weight: bold;
     color: #2b2a2a;
+   
+}
+.bold_text_num{
+    font-weight: bold;
+    color: #2b2a2a;
+    font-size: 20px;
+   
 }
 
 .currency_table_header{
     color: #50a973;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
     text-align:right;
     
@@ -212,7 +219,7 @@ tr{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -363,9 +370,10 @@ tr{
 }
 
 .see_all_prices{
-    text-align: center;
+    grid-column: span 2;
+    text-align: left;
     color: rgb(86, 87, 87);
-    font-size: large;
+    font-size: 25px;
     text-decoration: none;
 }
 
@@ -431,8 +439,7 @@ tr{
     padding: 10px;
     gap: 8px;
     justify-content: space-around;
-    border-top-width: 1px;
-    border-top-style: solid;
+    border-top: 1px rgb(219, 219, 219) solid;
 }
 
 .news_header{
@@ -476,7 +483,7 @@ tr{
 
 
 .image_news{
-    margin-top: 12px;
+    margin-top: 18px;
     width: 500px;
     height: 445px;
     border-radius: 8px;
@@ -485,9 +492,23 @@ tr{
 
 .image_table{
     width: 100px;
-    height: 90px;
+    height: 88px;
     border-radius: 8px;
 } 
+
+.news_row1,.news_row2,.news_row3,.news_row4{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px rgb(219, 219, 219) solid;
+}
+.news_row4{
+    border: white;
+}
+.news_text_rows{
+    margin: 20px;
+    margin-top: 0px;
+}
 
 .footer {
     background-color:#f7f7f7;
@@ -513,6 +534,7 @@ tr{
  .black_btn{
     display: flex;
     flex-direction: row;
+    direction: ltr;
     background-color: black;
     color: white;
     width: 150px;
@@ -535,7 +557,7 @@ tr{
 }
  
 .big_btn_text{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .small_btn_text{
@@ -724,16 +746,26 @@ tr{
 
 
   @media screen and (max-width: 500px) {
-    
+    .header{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;    
+    }
     .logo_row{
         display: grid;
         grid-template-columns: auto ;
 
+
     }
     .description_row{
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns:  auto auto auto;
+        justify-content: center;
     }
+
+    .description_text {
+        margin-left: 10px;
+      }
     
     .row2{
         display: grid;
@@ -753,6 +785,12 @@ tr{
     .footer_table{
         grid-template-columns: auto;
           
+     }
+
+     .footer {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;    
      }
 
   }
