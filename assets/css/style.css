@@ -1,12 +1,15 @@
-@font-face {
+/* @font-face {
     font-family: MyFont;
     src: url(alfont_com_هلفيتيكا-عربي-.ttf);
   }
 
 .gasoline_table,.foreign_currency_table,.currency_table,.gold_price_table{
     font-family: MyFont;
+  } */
+  body{
+    font-family: droid arabic kufi,sans-serif;
+    direction: rtl;
   }
-  
 button{
     cursor: pointer;
 }
@@ -45,7 +48,6 @@ button{
     justify-content: space-around; */
     display: grid;
     grid-template-columns: auto auto auto;
-    direction: rtl;
     background-color: #152638;
     color: aliceblue;
     justify-content: space-around;
@@ -62,7 +64,6 @@ button{
 .head_logo_text{   
     display: flex;
     flex-direction: row;
-    direction: rtl;
     font-size: 18px;
     /* flex: 30%; */
 }
@@ -81,7 +82,7 @@ button{
 }
 
 .face_tele_logo{
-    direction: rtl;
+    
     font-size: 25px;
     margin-top: auto;
     margin-bottom: auto;
@@ -98,17 +99,21 @@ button{
     margin-bottom: 40px; */
 
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto ;
+    grid-template-columns:repeat(9,auto) ;
     background-color: #38495b;
-    direction: rtl;
     justify-content:center;
 }
 
 .description_text{
-    color: white;
+
     margin-left: 34px;
     padding: 10px;
-    direction: rtl; 
+    letter-spacing: -.06em;
+    font-size: 10px;
+    font-weight: 600;
+    color: #ddddde;
+
+
 }
 
 .red_text{
@@ -132,8 +137,9 @@ button{
     font-size: 20px;
 }
 
+
+
 .currency_table{
-    direction: rtl;
     border-collapse: collapse;
     font-size: 20px;
     
@@ -150,6 +156,7 @@ td{
     padding: 6px;
 }
 .currency_number{
+    color: white;
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -202,10 +209,28 @@ tr{
     font-family: MyFont;
     font-size: 14px;
 }
+.currency_grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    font-size: 20px;
+}
+
+
+
+.currency_grid_item{
+    grid-column: 3 / span 2;
+    grid-row: 1;
+}
+
+
+
+
 
 .list_btn{
     width: 140px;
-    height:40px;
+    height:30px;
+    text-align: center;
     background-color: white;
     border-radius: 5px;
     border: 1px  solid gray;
@@ -217,6 +242,9 @@ tr{
 
 .list_btn_text{
     margin-left:15px ;
+}
+.list_btn_text2{
+    margin-left:20px ;
 }
 
 .list_btn_2{
@@ -246,7 +274,8 @@ tr{
 
 .change_currency_text_header{
     text-align: right; 
-    padding: 10px ;
+    padding: 10px;
+    padding-bottom: 0;
 
 }
 
@@ -260,7 +289,6 @@ tr{
 }
 
 .change_currency_table ,.gold_price_table ,.foreign_currency_table ,.gasoline_table{
-    direction: rtl;
     font-size: 20px;
 
 }
@@ -303,7 +331,6 @@ tr{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    direction: rtl;
     margin-top: 40px;
     
     }
@@ -335,14 +362,14 @@ tr{
     margin-right: 280px;
     display: grid;
     grid-template-rows: auto auto;
-    justify-content: end;    
+    justify-content: start;    
 }
 
 .news_section2{
     display: grid;
     grid-template-columns: auto auto;
-    direction: rtl;
     padding: 10px;
+    gap: 8px;
     justify-content: space-around;
     border-top-width: 1px;
     border-top-style: solid;
@@ -356,7 +383,6 @@ tr{
     display: grid;
     grid-template-columns: auto  auto;
     gap: 550px;
-    direction: rtl;
     font-size: 30px;
     justify-content: space-around;
     font-family : MyFont;
@@ -377,15 +403,22 @@ tr{
   }
   
 .news_table{
-    direction: rtl;
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 40px  0;
     
 }
 
+.news_table_text{
+    font-family: MyFont;
+    color: rgba(86, 87, 87, 0.911);
+    font-size: larger;
+}
+
+
 .image_news{
+    margin-top: 12px;
     width: 500px;
-    height: 400px;
+    height: 445px;
     border-radius: 8px;
 
 }
@@ -409,7 +442,6 @@ tr{
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around; 
-    direction: rtl;
     margin-top: 20px;
     
  }
@@ -452,9 +484,7 @@ tr{
 
 }
 
-.reverse_direction{
-    direction: ltr;
-}
+
 
 .apple_icon{
     font-size: 35px;
@@ -526,16 +556,13 @@ tr{
     
     }
 
-    .reverse_direction{
-        direction: rtl;
-    }
+  
   }
  
   @media screen and (max-width: 1000px) {
     
     .description_row{
         display: grid;
-        direction: rtl;
         grid-template-columns: auto auto auto auto;
     }
 
@@ -582,9 +609,6 @@ tr{
     
      }
 
-    .reverse_direction{
-        direction: rtl;
-    }
 
   }
 
