@@ -334,6 +334,14 @@ tr{
     margin-top: 15px;
 
 }
+
+.foreign_currency_grid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 25px;
+    font-size: 22px;
+    margin-top: 35px;
+}
 .gold_price{
     margin-top: 20px;
 }
@@ -365,9 +373,14 @@ tr{
     color: rgb(202, 172, 0);
 }
 
-.foreign_currency_header{
+.foreign_currency_header1{
     color: rgb(196, 2, 2);
+    font-weight: bolder;
 }
+.foreign_currency_header2{
+    color: rgb(196, 2, 2,0.7);
+}
+
 
 .gasoline_header{
     color:#6179a5;
@@ -393,20 +406,16 @@ tr{
 }
 
 .col1{    
-    margin-left: 35px;  
-    /* flex: 20%; */
+    margin-left: 50px;  
+
 }
 
 .col2{
-    margin-left: 35px;  
-    /* flex: 20%; */       
+    margin-left: 55px;  
+       
 }
 
-.col3{
 
-    margin-left: 35px;  
-    /* flex: 15%; */
-}
 
 .row3{
     margin-left: auto;
