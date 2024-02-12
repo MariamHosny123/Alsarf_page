@@ -197,8 +197,7 @@ tr{
 }
 
 .change_currency_table_data{
-    display: flex; 
-    justify-content: space-around;
+   margin: 5px;
 }
 
 .input_btn{
@@ -206,8 +205,8 @@ tr{
     width: 200px;
     height: 35px;
     padding: 8px;
-    font-family: MyFont;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight:10px;
 }
 .currency_grid{
     display: grid;
@@ -240,14 +239,14 @@ tr{
 
 }
 
-.list_btn_text{
-    margin-left:15px ;
-}
 .list_btn_text2{
-    margin-left:20px ;
+    font-size: larger;
 }
 
+
 .list_btn_2{
+    /* display: flex;
+    justify-content: space-between; */
     width: 120px;
     height:30px;
     background-color: white;
@@ -258,6 +257,11 @@ tr{
     font-size: large ;
 
 }
+.list_btn_arrow{
+    margin: auto;
+    font-size: smaller;
+    margin-right: 5px;
+}
 
 .flag_row{
     color:black;
@@ -266,6 +270,34 @@ tr{
 
 }
 
+
+.change_currency_grid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto;
+    border-radius: 5px;
+    border: 1px  solid gray;
+    border-collapse:separate;
+
+}
+.row_one{
+    padding: 10px ;
+}
+.row_two{
+    display: flex;
+    background-color: rgba(250, 250, 250, 0.9);
+    font-size: 25px;
+    justify-content: center;
+}
+
+.row_three,.row_four {
+    display: flex;
+    padding: 5px 15px 0px 15px;
+
+}
+.row_four{
+    padding-bottom: 15px;
+}
 .change_currency{
     border-radius: 5px;
     border: 1px  solid gray;
@@ -274,8 +306,10 @@ tr{
 
 .change_currency_text_header{
     text-align: right; 
-    padding: 10px;
+    font-size: 25px;
+    font-weight:bold;
     padding-bottom: 0;
+    padding-top: 0;
 
 }
 
@@ -330,8 +364,8 @@ tr{
     margin-bottom: 20px; */
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
     margin-top: 40px;
+    justify-content: center;
     
     }
 
@@ -346,13 +380,12 @@ tr{
 }
 
 .col2{
-    padding: 10px;
     margin-left: 35px;  
     /* flex: 20%; */       
 }
 
 .col3{
-    padding: 10px;
+
     margin-left: 35px;  
     /* flex: 15%; */
 }
