@@ -43,12 +43,12 @@ button{
 .logo_row{
     /* display: flex;
     flex-direction: row-reverse;
-    background-color: #152638;
+    background-color: #18293c;
     color: aliceblue;
     justify-content: space-around; */
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #152638;
+    background-color: #18293c;
     color: aliceblue;
     justify-content: space-around;
 }
@@ -69,8 +69,9 @@ button{
 }
 
 .egy_btn{
-    width: 40px;
-    background-color:#38495b;
+    width: 30px;
+    height: 25px;
+    background-color:#384d64;
     color: white;
     border-radius: 8px;
     border-color: 38495b;
@@ -91,16 +92,63 @@ button{
     /* flex: 40%; */
 }
 
+.expandable_menu{
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    
+}
+
+.menu{
+    width: 30px;
+    background-color:#18293c;
+    border: 1px solid white;
+    box-shadow: #ddd;
+    color: white;
+    border-radius: 8px;
+    border-color: 38495b;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.show_list:hover{
+    .menu_list{
+        display:inline;
+    }
+}
+
+
+.menu_list{
+    display: none;
+}
+
+.list_menu{
+    list-style: none;
+    color: #ddd;
+    padding-right: 0px;
+    font-weight: 900;
+}
+
+.list_menu >li>a{
+
+    color: #ddd;
+    text-decoration: none;
+}
+
+
 .description_row{
     /* display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    background-color: #38495b;
+    background-color: #1d3147;
     margin-bottom: 40px; */
 
     display: grid;
     grid-template-columns:repeat(9,auto) ;
-    background-color: #38495b;
+    background-color: #1d3147;
     justify-content:center;
 }
 
@@ -181,7 +229,7 @@ td{
 .bold_text{
     font-weight: bold;
     color: #2b2a2a;
-   
+    width: 220px;
 }
 .bold_text_num{
     font-weight: bold;
@@ -217,17 +265,26 @@ tr{
 }
 .currency_grid{
     display: grid;
-    grid-template-columns: auto auto auto auto;
     gap: 20px;
+    
+}
+.row_grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    justify-content: space-between;
     font-size: 25px;
+    border-bottom: 1px rgb(219, 219, 219) solid;
+   
+
+}
+.row_grid:hover{
+    background-color: #fafaface;
 }
 
 
 
-.currency_grid_item{
-    grid-column: 3 / span 2;
-    grid-row: 1;
-}
+
 
 
 
@@ -236,6 +293,7 @@ tr{
 .list_btn{
     width: 140px;
     height:30px;
+    margin-bottom: 10px;
     text-align: center;
     background-color: white;
     border-radius: 5px;
@@ -328,24 +386,26 @@ tr{
 .gold_price_grid{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    gap: 25px;
     font-size: 22px;
     margin-top: 15px;
 }
 
+
+.grid-item{
+    border-bottom: 1px rgb(219, 219, 219) solid; 
+    padding: 10px 5;
+  }
+
 .gasoline_grid{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    gap: 25px;
     font-size: 22px;
-    margin-top: 15px;
 
 }
 
 .foreign_currency_grid{
     display: grid;
     grid-template-columns: repeat(3,auto);
-    gap: 25px;
     font-size: 22px;
     margin-top: 35px;
 }
@@ -448,11 +508,11 @@ tr{
     font-size: 30px;
     flex-direction: row-reverse; */
     display: grid;
+    font-size: 45px;
     grid-template-columns: auto  auto;
     gap: 550px;
-    font-size: 30px;
     justify-content: space-around;
-    font-family : MyFont;
+    
 }
 
 .col_image_text{
@@ -586,17 +646,40 @@ tr{
 }
 
 
+
 @media screen and (max-width: 1400px) {
   
     .description_row{
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: repeat(6,auto);
     }
 
     .row2{
         display: grid;
         grid-template-columns: auto auto;
     }
+    .col1{
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px; 
+        /* flex: 20%; */
+    }
+
+    .col2{
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px; 
+        /* flex: 20%; */        
+    }
+
+    .col3{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+
+        /* flex: 15%; */
+    }
+
 
     td{
         padding: 0.5px;
@@ -622,12 +705,7 @@ tr{
         font-size: 20px;
     }
 
-    .news_header{
-        font-size: 25px;
-        gap: 0px;
-        justify-content: space-around; 
-    }
-
+   
     .grey_text2{
         font-size: 25px;
     }
@@ -642,21 +720,33 @@ tr{
   }
  
   @media screen and (max-width: 1000px) {
-    
+    .body{
+        margin: auto;
+        padding: auto;
+    }
+    .header{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;    
+    }
+    .description_text:nth-child(n+5){
+        display: none;
+    }
     .description_row{
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
 
-    .row2{
-        flex-direction: column;
-        justify-content: center;
-    }
 
     .row3{
         justify-content: center;
     }
-
+    .news_header{
+        grid-template-columns: auto;
+        font-size: 25px;
+    grid-template-columns: auto  auto;
+    gap: 50px;
+    }
     .news_section2{
         grid-template-columns: auto;
     }
@@ -664,54 +754,52 @@ tr{
     .col_news{
         margin-top: 20px;
     }
-    .col1{
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10px; 
-        /* flex: 20%; */
-    }
-
-    .col2{
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10px; 
-        /* flex: 20%; */        
-    }
-
-    .col3{
-        padding: 10px;
-        margin-left: 10px;
-        margin-right: 10px; 
-        /* flex: 15%; */
-    }
+ 
 
     .footer_table{
         display: grid;
         grid-template-columns: auto auto; 
     
      }
-
+     .footer {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;    
+     }
 
   }
 
   @media screen and (max-width: 800px) {
    
+    .description_text:nth-child(n+4){
+        display: none;
+    }
     .logo_row{
         display: grid;
         grid-template-columns: auto ;
 
     }
-
     .description_row{
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto  auto auto;
     }
 
     .row2{
         display: grid;
         grid-template-columns: auto;
     }
+    .col3{
+        display: grid;
+        grid-template-columns:  auto;
 
+        /* flex: 15%; */
+    }
+    .news_header{
+        grid-template-columns: auto;
+        font-size: 25px;
+    grid-template-columns: auto  auto;
+    gap: 50px;
+    }
     .footer_table{
         grid-template-columns: auto; 
     
@@ -721,7 +809,9 @@ tr{
 
 
   @media screen and (max-width: 600px) {
-   
+    .description_text:nth-child(n+4){
+        display: none;
+    }
     .logo_row{
         display: grid;
         grid-template-columns: auto ;
@@ -729,7 +819,7 @@ tr{
     }
     .description_row{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto  auto auto;
     }
 
     .row2{
@@ -746,6 +836,10 @@ tr{
 
 
   @media screen and (max-width: 500px) {
+    body{
+        margin: auto;
+        padding: auto;
+    }
     .header{
         margin-left: 0px;
         margin-right: 0px;
@@ -753,8 +847,7 @@ tr{
     }
     .logo_row{
         display: grid;
-        grid-template-columns: auto ;
-
+        grid-template-columns: auto auto auto ;
 
     }
     .description_row{
@@ -767,9 +860,23 @@ tr{
         margin-left: 10px;
       }
     
+      .row_grid{
+        gap: 10px;
+      }
+
+      .col2{
+        margin: auto;
+        padding: auto;
+      }
+      .foreign_currency_grid , .gasoline_grid{
+        margin: auto;
+        font-size: 25px;
+      }
+
     .row2{
         display: grid;
         grid-template-columns: auto;
+
 
     }
 
@@ -781,7 +888,11 @@ tr{
         width:400;
         height:300;
     }
-
+    .news_header{
+        font-size: 25px;
+        grid-template-columns: auto  auto;
+        gap: 50px;
+    }
     .footer_table{
         grid-template-columns: auto;
           
