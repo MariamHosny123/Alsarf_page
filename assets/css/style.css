@@ -10,6 +10,12 @@
     font-family: droid arabic kufi,sans-serif;
     direction: rtl;
   }
+
+  .container{
+    display: grid;
+
+
+  }
 button{
     cursor: pointer;
 }
@@ -35,9 +41,9 @@ button{
 .header{
     display: flex;   
     flex-direction: column;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 50px;    
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;    
 }
 
 .logo_row{
@@ -119,6 +125,9 @@ button{
         display:inline;
     }
 }
+
+
+
 
 
 .menu_list{
@@ -301,6 +310,7 @@ tr{
     padding: 5px;
     color: #747272;
     font-size: large ;
+    cursor: pointer;
 
 }
 
@@ -475,11 +485,13 @@ tr{
 
 .col1{    
     margin-left: 50px;  
+   
 
 }
 
 .col2{
     margin-left: 55px;  
+   
        
 }
 
@@ -490,7 +502,8 @@ tr{
     margin-right: 280px;
     display: grid;
     grid-template-rows: auto auto;
-    justify-content: start;    
+    justify-content: start;  
+    
 }
 
 .news_section2{
@@ -547,6 +560,8 @@ tr{
     width: 500px;
     height: 445px;
     border-radius: 8px;
+    cursor: pointer;
+
 
 }
 
@@ -554,6 +569,7 @@ tr{
     width: 100px;
     height: 88px;
     border-radius: 8px;
+    cursor: pointer;
 } 
 
 .news_row1,.news_row2,.news_row3,.news_row4{
@@ -577,6 +593,7 @@ tr{
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;    
+    
  }
 
  .footer_table{
@@ -584,6 +601,7 @@ tr{
     grid-template-columns: auto auto auto auto;
     justify-content: space-around; 
     margin-top: 20px;
+    
     
  }
 
@@ -602,13 +620,18 @@ tr{
     border-radius: 5px;
     border-color: black;
     margin-bottom: 5px;
+    cursor: pointer;
 
 }
 
+.facebook_footer{
+    cursor: pointer;
+}
 .list_text{
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
     color: rgba(86, 87, 87,0.7);
+    cursor: pointer;
 }
 
 .black_btn_text{
@@ -791,7 +814,6 @@ tr{
     .col3{
         display: grid;
         grid-template-columns:  auto;
-
         /* flex: 15%; */
     }
     .news_header{
@@ -863,12 +885,19 @@ tr{
       .row_grid{
         gap: 10px;
       }
+      
 
       .col2{
         margin: auto;
         padding: auto;
       }
-      .foreign_currency_grid , .gasoline_grid{
+ 
+      .row3{
+        margin-top: 20px;
+      
+      }
+
+    .foreign_currency_grid , .gasoline_grid{
         margin: auto;
         font-size: 25px;
       }
